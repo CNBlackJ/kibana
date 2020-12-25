@@ -126,7 +126,7 @@ export class KibanaOverviewPlugin
             defaultMessage: 'Reveal patterns and relationships.',
           }),
         ],
-        icon: 'logoKibana',
+        icon: 'home',
         path: PLUGIN_PATH,
         order: 400,
       });

@@ -6,6 +6,6 @@
   "configPath": ["enterpriseSearch"],
   "optionalPlugins": ["usageCollection", "security", "home", "spaces", "cloud"],
   "server": true,
-  "ui": true,
+  "ui": false,
   "requiredBundles": ["home"]
 }

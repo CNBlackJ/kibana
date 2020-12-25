@@ -179,7 +179,7 @@ export function CollapsibleNav({
             })}
             listItems={[
               {
-                label: 'Home',
+                label: '首页',
                 iconType: 'home',
                 href: homeHref,
                 onClick: (event) => {

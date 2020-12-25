@@ -108,4 +108,17 @@
 
 # Specifies locale to be used for all localizable strings, dates and number formats.
 # Supported languages are the following: English - en , by default , Chinese - zh-CN .
-#i18n.locale: "en"
+i18n.locale: "zh-CN"
+
+xpack.apm.enabled: false
+xpack.maps.enabled: false
+xpack.ml.enabled: false
+xpack.canvas.enabled: false
+xpack.fleet.enabled: false
+xpack.graph.enabled: false
+xpack.monitoring.enabled: false
+xpack.uptime.enabled: false
+
+uiSettings.overrides:
+   globalHeader: Some global header text goes here, and cannot be changed
+   globalFooter: Some global footer text goes here, and cannot be changed

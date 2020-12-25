@@ -27,7 +27,7 @@ export const DEFAULT_APP_CATEGORIES: Record<string, AppCategory> = Object.freeze
     label: i18n.translate('core.ui.kibanaNavList.label', {
       defaultMessage: 'Analytics',
     }),
-    euiIconType: 'logoKibana',
+    euiIconType: 'home',
     order: 1000,
   },
   enterpriseSearch: {
@@ -36,14 +36,14 @@ export const DEFAULT_APP_CATEGORIES: Record<string, AppCategory> = Object.freeze
       defaultMessage: 'Enterprise Search',
     }),
     order: 2000,
-    euiIconType: 'logoEnterpriseSearch',
+    euiIconType: 'home',
   },
   observability: {
     id: 'observability',
     label: i18n.translate('core.ui.observabilityNavList.label', {
       defaultMessage: 'Observability',
     }),
-    euiIconType: 'logoObservability',
+    euiIconType: 'home',
     order: 3000,
   },
   security: {
@@ -52,7 +52,7 @@ export const DEFAULT_APP_CATEGORIES: Record<string, AppCategory> = Object.freeze
       defaultMessage: 'Security',
     }),
     order: 4000,
-    euiIconType: 'logoSecurity',
+    euiIconType: 'home',
   },
   management: {
     id: 'management',

@@ -34,7 +34,7 @@ export interface Plugin<
   TStart = void,
   TPluginsSetup extends object = object,
   TPluginsStart extends object = object
-> {
+  > {
   setup(core: CoreSetup<TPluginsStart, TStart>, plugins: TPluginsSetup): TSetup | Promise<TSetup>;
   start(core: CoreStart, plugins: TPluginsStart): TStart | Promise<TStart>;
   stop?(): void;
@@ -51,7 +51,7 @@ export type PluginInitializer<
   TStart,
   TPluginsSetup extends object = object,
   TPluginsStart extends object = object
-> = (core: PluginInitializerContext) => Plugin<TSetup, TStart, TPluginsSetup, TPluginsStart>;
+  > = (core: PluginInitializerContext) => Plugin<TSetup, TStart, TPluginsSetup, TPluginsStart>;
 
 /**
  * Lightweight wrapper around discovered plugin that is responsible for instantiating
@@ -64,7 +64,7 @@ export class PluginWrapper<
   TStart = unknown,
   TPluginsSetup extends object = object,
   TPluginsStart extends object = object
-> {
+  > {
   public readonly name: DiscoveredPlugin['id'];
   public readonly configPath: DiscoveredPlugin['configPath'];
   public readonly requiredPlugins: DiscoveredPlugin['requiredPlugins'];

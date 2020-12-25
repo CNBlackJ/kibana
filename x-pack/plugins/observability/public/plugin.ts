@@ -80,7 +80,7 @@ export class Plugin implements PluginClass<ObservabilityPluginSetup, Observabili
             defaultMessage: 'Measure SLAs and react to issues.',
           }),
         ],
-        icon: 'logoObservability',
+        icon: 'home',
         path: '/app/observability/',
         order: 200,
       });
