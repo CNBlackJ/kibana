@@ -20,7 +20,7 @@ export const AuthenticationStatePage: React.FC<Props> = (props) => (
       <div className="secAuthenticationStatePage__content eui-textCenter">
         <EuiSpacer size="xxl" />
         <span className="secAuthenticationStatePage__logo">
-          <EuiIcon type="logoElastic" size="xxl" />
+          <EuiIcon type="https://upload.wikimedia.org/wikipedia/commons/c/cc/Guangzhou_Metro_icon.svg" size="xxl" />
         </span>
         <EuiTitle size="l" className="secAuthenticationStatePage__title">
           <h1>{props.title}</h1>

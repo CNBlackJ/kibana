@@ -74,11 +74,11 @@ export const Sourcerer = React.memo<SourcererComponentProps>(({ scope: scopeId }
     ({ value }) =>
       kibanaIndexPatterns.some((kip) => kip.title === value) ? (
         <span data-test-subj="kip-option">
-          <EuiIcon type="logoKibana" size="s" /> {value}
+          <EuiIcon type="https://upload.wikimedia.org/wikipedia/commons/c/cc/Guangzhou_Metro_icon.svg" size="s" /> {value}
         </span>
       ) : (
-        <span data-test-subj="config-option">{value}</span>
-      ),
+          <span data-test-subj="config-option">{value}</span>
+        ),
     [kibanaIndexPatterns]
   );
 

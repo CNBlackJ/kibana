@@ -85,29 +85,29 @@ export class LoadingIndicator extends React.Component<LoadingIndicatorProps, { v
         aria-label={ariaLabel}
       />
     ) : (
-      <EuiIcon
-        type="logoElastic"
-        size="l"
-        data-test-subj={testSubj}
-        className="chrHeaderLogo__cluster"
-        aria-label={i18n.translate('core.ui.chrome.headerGlobalNav.logoAriaLabel', {
-          defaultMessage: 'Elastic Logo',
-        })}
-      />
-    );
+        <EuiIcon
+          type="https://upload.wikimedia.org/wikipedia/commons/c/cc/Guangzhou_Metro_icon.svg"
+          size="l"
+          data-test-subj={testSubj}
+          className="chrHeaderLogo__cluster"
+          aria-label={i18n.translate('core.ui.chrome.headerGlobalNav.logoAriaLabel', {
+            defaultMessage: 'Elastic Logo',
+          })}
+        />
+      );
 
     return !this.props.showAsBar ? (
       logo
     ) : (
-      <EuiProgress
-        className={className}
-        data-test-subj={testSubj}
-        aria-hidden={ariaHidden}
-        aria-label={ariaLabel}
-        position="fixed"
-        color="accent"
-        size="xs"
-      />
-    );
+        <EuiProgress
+          className={className}
+          data-test-subj={testSubj}
+          aria-hidden={ariaHidden}
+          aria-label={ariaLabel}
+          position="fixed"
+          color="accent"
+          size="xs"
+        />
+      );
   }
 }

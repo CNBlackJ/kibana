@@ -41,7 +41,7 @@ export const SideNav: React.FC<SideNavProps> = ({ product, children }) => {
     >
       <div className={`enterpriseSearchProduct enterpriseSearchProduct--${product.ID}`}>
         <div className="enterpriseSearchProduct__icon">
-          <EuiIcon type="logoEnterpriseSearch" />
+          <EuiIcon type="https://upload.wikimedia.org/wikipedia/commons/c/cc/Guangzhou_Metro_icon.svg" />
         </div>
         <div className="enterpriseSearchProduct__title">
           <EuiText size="xs" color="subdued">
@@ -101,10 +101,10 @@ export const SideNavLink: React.FC<SideNavLinkProps> = ({
           {children}
         </EuiLink>
       ) : (
-        <EuiLinkTo {...rest} className={classes} to={to} onClick={closeNavigation}>
-          {children}
-        </EuiLinkTo>
-      )}
+          <EuiLinkTo {...rest} className={classes} to={to} onClick={closeNavigation}>
+            {children}
+          </EuiLinkTo>
+        )}
       {subNav && <ul className="enterpriseSearchNavLinks__subNav">{subNav}</ul>}
     </li>
   );
