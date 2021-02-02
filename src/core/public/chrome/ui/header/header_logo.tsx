@@ -99,7 +99,7 @@ export function HeaderLogo({ href, navigateToApp, ...observables }: Props) {
   return (
     <EuiHeaderLogo
       data-test-subj="logo"
-      iconType="logoElastic"
+      iconType="https://upload.wikimedia.org/wikipedia/commons/c/cc/Guangzhou_Metro_icon.svg"
       onClick={(e) => onClick(e, forceNavigation, navLinks, navigateToApp)}
       href={href}
       aria-label={i18n.translate('core.ui.chrome.headerGlobalNav.goHomePageIconAriaLabel', {

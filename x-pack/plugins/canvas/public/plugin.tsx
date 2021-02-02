@@ -88,7 +88,7 @@ export class CanvasPlugin
       category: DEFAULT_APP_CATEGORIES.kibana,
       id: 'canvas',
       title: 'Canvas',
-      euiIconType: 'logoKibana',
+      euiIconType: 'https://upload.wikimedia.org/wikipedia/commons/c/cc/Guangzhou_Metro_icon.svg',
       order: 3000,
       updater$: this.appUpdater,
       mount: async (params: AppMountParameters) => {

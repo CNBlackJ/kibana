@@ -167,7 +167,7 @@ export const ElementMenu: FunctionComponent<Props> = ({
         {
           name: strings.getEmbedObjectMenuItemLabel(),
           className: CONTEXT_MENU_TOP_BORDER_CLASSNAME,
-          icon: <EuiIcon type="logoKibana" size="m" />,
+          icon: <EuiIcon type="https://upload.wikimedia.org/wikipedia/commons/c/cc/Guangzhou_Metro_icon.svg" size="m" />,
           onClick: () => {
             showEmbedPanel();
             closePopover();

@@ -32,7 +32,7 @@ export const ENTERPRISE_SEARCH_PLUGIN = {
     }),
   ],
   URL: '/app/enterprise_search/overview',
-  LOGO: 'logoEnterpriseSearch',
+  LOGO: 'https://upload.wikimedia.org/wikipedia/commons/c/cc/Guangzhou_Metro_icon.svg',
 };
 
 export const APP_SEARCH_PLUGIN = {

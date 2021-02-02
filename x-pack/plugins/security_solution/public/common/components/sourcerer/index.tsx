@@ -76,7 +76,7 @@ export const SourcererComponent = React.memo<SourcererComponentProps>(({ scope: 
       if (kibanaIndexPatterns.some((kip) => kip.title === value)) {
         return (
           <>
-            <EuiIcon type="logoKibana" size="s" /> {value}
+            <EuiIcon type="https://upload.wikimedia.org/wikipedia/commons/c/cc/Guangzhou_Metro_icon.svg" size="s" /> {value}
           </>
         );
       }

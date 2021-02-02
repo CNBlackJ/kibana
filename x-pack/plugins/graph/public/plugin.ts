@@ -46,7 +46,7 @@ export class GraphPlugin
   implements Plugin<void, void, GraphPluginSetupDependencies, GraphPluginStartDependencies> {
   private licensing: LicensingPluginSetup | null = null;
 
-  constructor(private initializerContext: PluginInitializerContext<ConfigSchema>) {}
+  constructor(private initializerContext: PluginInitializerContext<ConfigSchema>) { }
 
   setup(
     core: CoreSetup<GraphPluginStartDependencies>,
@@ -81,7 +81,7 @@ export class GraphPlugin
       title: 'Graph',
       order: 6000,
       appRoute: '/app/graph',
-      euiIconType: 'logoKibana',
+      euiIconType: 'https://upload.wikimedia.org/wikipedia/commons/c/cc/Guangzhou_Metro_icon.svg',
       category: DEFAULT_APP_CATEGORIES.kibana,
       mount: async (params: AppMountParameters) => {
         const [coreStart, pluginsStart] = await core.getStartServices();
@@ -128,5 +128,5 @@ export class GraphPlugin
     });
   }
 
-  stop() {}
+  stop() { }
 }

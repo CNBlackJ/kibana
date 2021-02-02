@@ -175,9 +175,8 @@ export const EndpointList = () => {
   const handleCreatePolicyClick = useNavigateToAppEventHandler<CreatePackagePolicyRouteState>(
     'ingestManager',
     {
-      path: `#/integrations${
-        endpointPackageVersion ? `/endpoint-${endpointPackageVersion}/add-integration` : ''
-      }`,
+      path: `#/integrations${endpointPackageVersion ? `/endpoint-${endpointPackageVersion}/add-integration` : ''
+        }`,
       state: {
         onCancelNavigateTo: [
           'securitySolution:administration',
@@ -211,7 +210,7 @@ export const EndpointList = () => {
     [dispatch]
   );
 
-  const NOOP = useCallback(() => {}, []);
+  const NOOP = useCallback(() => { }, []);
 
   const handleDeployEndpointsClick = useNavigateToAppEventHandler<
     AgentPolicyDetailsDeployAgentAction
@@ -426,9 +425,8 @@ export const EndpointList = () => {
                       key="hostDetailsLink"
                       navigateAppId={APP_ID}
                       navigateOptions={{ path: `hosts/${item.metadata.host.hostname}` }}
-                      href={`${services?.application?.getUrlForApp('securitySolution')}/hosts/${
-                        item.metadata.host.hostname
-                      }`}
+                      href={`${services?.application?.getUrlForApp('securitySolution')}/hosts/${item.metadata.host.hostname
+                        }`}
                     >
                       <FormattedMessage
                         id="xpack.securitySolution.endpoint.list.actions.hostDetails"
@@ -436,7 +434,7 @@ export const EndpointList = () => {
                       />
                     </EuiContextMenuItemNavByRouter>,
                     <EuiContextMenuItemNavByRouter
-                      icon="logoObservability"
+                      icon="https://upload.wikimedia.org/wikipedia/commons/c/cc/Guangzhou_Metro_icon.svg"
                       key="agentConfigLink"
                       data-test-subj="agentPolicyLink"
                       navigateAppId="ingestManager"

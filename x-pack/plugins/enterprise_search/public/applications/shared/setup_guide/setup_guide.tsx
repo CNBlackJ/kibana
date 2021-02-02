@@ -35,7 +35,8 @@ import './setup_guide.scss';
 interface ISetupGuideProps {
   children: React.ReactNode;
   productName: string;
-  productEuiIcon: 'logoAppSearch' | 'logoWorkplaceSearch' | 'logoEnterpriseSearch';
+  // productEuiIcon: 'logoAppSearch' | 'logoWorkplaceSearch' | 'logoEnterpriseSearch';
+  productEuiIcon: 'https://upload.wikimedia.org/wikipedia/commons/c/cc/Guangzhou_Metro_icon.svg';
   standardAuthLink?: string;
   elasticsearchNativeAuthLink?: string;
 }
@@ -125,8 +126,8 @@ export const SetupGuide: React.FC<ISetupGuideProps> = ({
                             Elasticsearch Native Auth
                           </EuiLink>
                         ) : (
-                          'Elasticsearch Native Auth'
-                        ),
+                            'Elasticsearch Native Auth'
+                          ),
                       }}
                     />
                   </p>
@@ -208,8 +209,8 @@ export const SetupGuide: React.FC<ISetupGuideProps> = ({
                                 Standard Auth
                               </EuiLink>
                             ) : (
-                              'Standard Auth'
-                            ),
+                                'Standard Auth'
+                              ),
                           }}
                         />
                       </p>

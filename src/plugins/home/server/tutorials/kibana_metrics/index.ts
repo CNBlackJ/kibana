@@ -50,7 +50,7 @@ export function kibanaMetricsSpecProvider(context: TutorialContext): TutorialSch
         learnMoreLink: '{config.docs.beats.metricbeat}/metricbeat-module-kibana.html',
       },
     }),
-    euiIconType: 'logoKibana',
+    euiIconType: 'https://upload.wikimedia.org/wikipedia/commons/c/cc/Guangzhou_Metro_icon.svg',
     artifacts: {
       application: {
         label: i18n.translate('home.tutorials.kibanaMetrics.artifacts.application.label', {

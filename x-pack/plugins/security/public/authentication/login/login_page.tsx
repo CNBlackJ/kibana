@@ -87,7 +87,7 @@ export class LoginPage extends Component<Props, State> {
           <div className={contentHeaderClasses}>
             <EuiSpacer size="xxl" />
             <span className="loginWelcome__logo">
-              <EuiIcon type="logoElastic" size="xxl" />
+              <EuiIcon type="https://upload.wikimedia.org/wikipedia/commons/c/cc/Guangzhou_Metro_icon.svg" size="xxl" />
             </span>
             <EuiTitle size="m" className="loginWelcome__title">
               <h1>

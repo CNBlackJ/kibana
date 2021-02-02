@@ -101,7 +101,7 @@ export class TimelionPlugin implements Plugin<void, void> {
       title: 'Timelion',
       order: 8000,
       defaultPath: '#/',
-      euiIconType: 'logoKibana',
+      euiIconType: 'https://upload.wikimedia.org/wikipedia/commons/c/cc/Guangzhou_Metro_icon.svg',
       category: DEFAULT_APP_CATEGORIES.kibana,
       navLinkStatus:
         visTypeTimelion.isUiEnabled === false ? AppNavLinkStatus.hidden : AppNavLinkStatus.default,

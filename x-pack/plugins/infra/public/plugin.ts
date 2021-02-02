@@ -21,7 +21,7 @@ import { getLogsHasDataFetcher, getLogsOverviewDataFetcher } from './utils/logs_
 import { createMetricsHasData, createMetricsFetchData } from './metrics_overview_fetchers';
 
 export class Plugin implements InfraClientPluginClass {
-  constructor(_context: PluginInitializerContext) {}
+  constructor(_context: PluginInitializerContext) { }
 
   setup(core: InfraClientCoreSetup, pluginsSetup: InfraClientSetupDeps) {
     if (pluginsSetup.home) {
@@ -51,7 +51,7 @@ export class Plugin implements InfraClientPluginClass {
       title: i18n.translate('xpack.infra.logs.pluginTitle', {
         defaultMessage: 'Logs',
       }),
-      euiIconType: 'logoObservability',
+      euiIconType: 'https://upload.wikimedia.org/wikipedia/commons/c/cc/Guangzhou_Metro_icon.svg',
       order: 8100,
       appRoute: '/app/logs',
       category: DEFAULT_APP_CATEGORIES.observability,
@@ -69,7 +69,7 @@ export class Plugin implements InfraClientPluginClass {
       title: i18n.translate('xpack.infra.metrics.pluginTitle', {
         defaultMessage: 'Metrics',
       }),
-      euiIconType: 'logoObservability',
+      euiIconType: 'https://upload.wikimedia.org/wikipedia/commons/c/cc/Guangzhou_Metro_icon.svg',
       order: 8200,
       appRoute: '/app/metrics',
       category: DEFAULT_APP_CATEGORIES.observability,
@@ -97,7 +97,7 @@ export class Plugin implements InfraClientPluginClass {
     });
   }
 
-  start(_core: InfraClientCoreStart, _plugins: InfraClientStartDeps) {}
+  start(_core: InfraClientCoreStart, _plugins: InfraClientStartDeps) { }
 
-  stop() {}
+  stop() { }
 }

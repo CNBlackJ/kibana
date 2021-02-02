@@ -50,7 +50,7 @@ export function Header({
         <EuiSpacer size="l" />
         <EuiFlexGroup>
           <EuiFlexItem grow={false}>
-            <EuiIcon type="logoObservability" size="xxl" data-test-subj="observability-logo" />
+            <EuiIcon type="https://upload.wikimedia.org/wikipedia/commons/c/cc/Guangzhou_Metro_icon.svg" size="xxl" data-test-subj="observability-logo" />
           </EuiFlexItem>
           <EuiFlexItem>
             <EuiTitle size="m">

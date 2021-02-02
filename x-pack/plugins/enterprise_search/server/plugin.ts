@@ -85,7 +85,7 @@ export class EnterpriseSearchPlugin implements Plugin {
       name: ENTERPRISE_SEARCH_PLUGIN.NAME,
       order: 0,
       category: DEFAULT_APP_CATEGORIES.enterpriseSearch,
-      icon: 'logoEnterpriseSearch',
+      icon: 'https://upload.wikimedia.org/wikipedia/commons/c/cc/Guangzhou_Metro_icon.svg',
       app: [
         'kibana',
         ENTERPRISE_SEARCH_PLUGIN.ID,
@@ -152,7 +152,7 @@ export class EnterpriseSearchPlugin implements Plugin {
     registerTelemetryRoute({ ...dependencies, getSavedObjectsService: () => savedObjectsStarted });
   }
 
-  public start() {}
+  public start() { }
 
-  public stop() {}
+  public stop() { }
 }

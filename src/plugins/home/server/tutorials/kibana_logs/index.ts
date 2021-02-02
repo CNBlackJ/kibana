@@ -49,7 +49,7 @@ export function kibanaLogsSpecProvider(context: TutorialContext): TutorialSchema
         learnMoreLink: '{config.docs.beats.filebeat}/filebeat-module-kibana.html',
       },
     }),
-    euiIconType: 'logoKibana',
+    euiIconType: 'https://upload.wikimedia.org/wikipedia/commons/c/cc/Guangzhou_Metro_icon.svg',
     artifacts: {
       dashboards: [],
       application: {

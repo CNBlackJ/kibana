@@ -131,7 +131,7 @@ export class ApmPlugin implements Plugin<ApmPluginSetup, ApmPluginStart> {
       id: 'apm',
       title: 'APM',
       order: 8300,
-      euiIconType: 'logoObservability',
+      euiIconType: 'https://upload.wikimedia.org/wikipedia/commons/c/cc/Guangzhou_Metro_icon.svg',
       appRoute: '/app/apm',
       icon: 'plugins/apm/public/icon.svg',
       category: DEFAULT_APP_CATEGORIES.observability,
@@ -151,7 +151,7 @@ export class ApmPlugin implements Plugin<ApmPluginSetup, ApmPluginStart> {
       id: 'ux',
       title: 'User Experience',
       order: 8500,
-      euiIconType: 'logoObservability',
+      euiIconType: 'https://upload.wikimedia.org/wikipedia/commons/c/cc/Guangzhou_Metro_icon.svg',
       category: DEFAULT_APP_CATEGORIES.observability,
 
       async mount(params: AppMountParameters<unknown>) {

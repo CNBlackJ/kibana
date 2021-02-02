@@ -81,12 +81,12 @@ export interface VisualizePluginSetupDependencies {
 
 export class VisualizePlugin
   implements
-    Plugin<void, void, VisualizePluginSetupDependencies, VisualizePluginStartDependencies> {
+  Plugin<void, void, VisualizePluginSetupDependencies, VisualizePluginStartDependencies> {
   private appStateUpdater = new BehaviorSubject<AppUpdater>(() => ({}));
   private stopUrlTracking: (() => void) | undefined = undefined;
   private currentHistory: ScopedHistory | undefined = undefined;
 
-  constructor(private initializerContext: PluginInitializerContext) {}
+  constructor(private initializerContext: PluginInitializerContext) { }
 
   public async setup(
     core: CoreSetup<VisualizePluginStartDependencies>,
@@ -141,7 +141,7 @@ export class VisualizePlugin
       id: 'visualize',
       title: 'Visualize',
       order: 8000,
-      euiIconType: 'logoKibana',
+      euiIconType: 'https://upload.wikimedia.org/wikipedia/commons/c/cc/Guangzhou_Metro_icon.svg',
       defaultPath: '#/',
       category: DEFAULT_APP_CATEGORIES.kibana,
       updater$: this.appStateUpdater.asObservable(),

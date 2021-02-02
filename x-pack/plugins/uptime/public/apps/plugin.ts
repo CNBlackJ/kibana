@@ -47,7 +47,7 @@ export type ClientStart = void;
 
 export class UptimePlugin
   implements Plugin<ClientSetup, ClientStart, ClientPluginsSetup, ClientPluginsStart> {
-  constructor(_context: PluginInitializerContext) {}
+  constructor(_context: PluginInitializerContext) { }
 
   public async setup(
     core: CoreSetup<ClientPluginsStart, unknown>,
@@ -85,7 +85,7 @@ export class UptimePlugin
 
     core.application.register({
       id: PLUGIN.ID,
-      euiIconType: 'logoObservability',
+      euiIconType: 'https://upload.wikimedia.org/wikipedia/commons/c/cc/Guangzhou_Metro_icon.svg',
       order: 8400,
       title: PLUGIN.TITLE,
       category: DEFAULT_APP_CATEGORIES.observability,
@@ -114,5 +114,5 @@ export class UptimePlugin
     });
   }
 
-  public stop(): void {}
+  public stop(): void { }
 }

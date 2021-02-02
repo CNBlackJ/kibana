@@ -18,7 +18,7 @@ import GettingStarted from './assets/getting_started.png';
 export const SetupGuide: React.FC = () => (
   <SetupGuideLayout
     productName={ENTERPRISE_SEARCH_PLUGIN.NAME}
-    productEuiIcon="logoEnterpriseSearch"
+    productEuiIcon="https://upload.wikimedia.org/wikipedia/commons/c/cc/Guangzhou_Metro_icon.svg"
     standardAuthLink="https://www.elastic.co/guide/en/app-search/current/security-and-users.html#app-search-self-managed-security-and-user-management-standard"
     elasticsearchNativeAuthLink="https://www.elastic.co/guide/en/app-search/current/security-and-users.html#app-search-self-managed-security-and-user-management-elasticsearch-native-realm"
   >

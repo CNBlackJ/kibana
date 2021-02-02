@@ -25,7 +25,7 @@ export const ObservabilityLayerWizardConfig: LayerWizard = {
   description: i18n.translate('xpack.maps.observability.desc', {
     defaultMessage: 'APM layers',
   }),
-  icon: 'logoObservability',
+  icon: 'https://upload.wikimedia.org/wikipedia/commons/c/cc/Guangzhou_Metro_icon.svg',
   renderWizard: (renderWizardArguments: RenderWizardArguments) => {
     return <ObservabilityLayerTemplate {...renderWizardArguments} />;
   },

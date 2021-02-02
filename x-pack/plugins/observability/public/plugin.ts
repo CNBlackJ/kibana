@@ -34,14 +34,14 @@ export type ObservabilityPluginStart = void;
 export class Plugin implements PluginClass<ObservabilityPluginSetup, ObservabilityPluginStart> {
   private readonly appUpdater$ = new BehaviorSubject<AppUpdater>(() => ({}));
 
-  constructor(context: PluginInitializerContext) {}
+  constructor(context: PluginInitializerContext) { }
 
   public setup(core: CoreSetup, plugins: ObservabilityPluginSetupDeps) {
     core.application.register({
       id: 'observability-overview',
       title: 'Overview',
       order: 8000,
-      euiIconType: 'logoObservability',
+      euiIconType: 'https://upload.wikimedia.org/wikipedia/commons/c/cc/Guangzhou_Metro_icon.svg',
       appRoute: '/app/observability',
       updater$: this.appUpdater$,
       category: DEFAULT_APP_CATEGORIES.observability,
@@ -80,7 +80,7 @@ export class Plugin implements PluginClass<ObservabilityPluginSetup, Observabili
             defaultMessage: 'Measure SLAs and react to issues.',
           }),
         ],
-        icon: 'logoObservability',
+        icon: 'https://upload.wikimedia.org/wikipedia/commons/c/cc/Guangzhou_Metro_icon.svg',
         path: '/app/observability/',
         order: 200,
       });

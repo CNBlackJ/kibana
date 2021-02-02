@@ -39,12 +39,12 @@ import { PLUGIN_ID, PLUGIN_NAME, PLUGIN_PATH, PLUGIN_ICON } from '../common';
 
 export class KibanaOverviewPlugin
   implements
-    Plugin<
-      KibanaOverviewPluginSetup,
-      KibanaOverviewPluginStart,
-      AppPluginSetupDependencies,
-      AppPluginStartDependencies
-    > {
+  Plugin<
+  KibanaOverviewPluginSetup,
+  KibanaOverviewPluginStart,
+  AppPluginSetupDependencies,
+  AppPluginStartDependencies
+  > {
   public setup(
     core: CoreSetup<AppPluginStartDependencies>,
     { home }: AppPluginSetupDependencies
@@ -121,7 +121,7 @@ export class KibanaOverviewPlugin
             defaultMessage: 'Reveal patterns and relationships.',
           }),
         ],
-        icon: 'logoKibana',
+        icon: 'https://upload.wikimedia.org/wikipedia/commons/c/cc/Guangzhou_Metro_icon.svg',
         path: PLUGIN_PATH,
         order: 400,
       });
@@ -135,5 +135,5 @@ export class KibanaOverviewPlugin
     return {};
   }
 
-  public stop() {}
+  public stop() { }
 }

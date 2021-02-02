@@ -117,7 +117,7 @@ export class EnterpriseSearchPlugin implements Plugin {
         id: ENTERPRISE_SEARCH_PLUGIN.ID,
         title: ENTERPRISE_SEARCH_PLUGIN.NAME,
         subtitle: ENTERPRISE_SEARCH_PLUGIN.SUBTITLE,
-        icon: 'logoEnterpriseSearch',
+        icon: 'https://upload.wikimedia.org/wikipedia/commons/c/cc/Guangzhou_Metro_icon.svg',
         description: ENTERPRISE_SEARCH_PLUGIN.DESCRIPTION,
         appDescriptions: ENTERPRISE_SEARCH_PLUGIN.APP_DESCRIPTIONS,
         path: ENTERPRISE_SEARCH_PLUGIN.URL,
@@ -145,9 +145,9 @@ export class EnterpriseSearchPlugin implements Plugin {
     }
   }
 
-  public start() {}
+  public start() { }
 
-  public stop() {}
+  public stop() { }
 
   private async getKibanaDeps(core: CoreSetup, params: AppMountParameters) {
     // Helper for using start dependencies on mount (instead of setup dependencies)

@@ -27,7 +27,7 @@ export const DEFAULT_APP_CATEGORIES: Record<string, AppCategory> = Object.freeze
     label: i18n.translate('core.ui.kibanaNavList.label', {
       defaultMessage: 'Kibana',
     }),
-    euiIconType: 'logoKibana',
+    euiIconType: 'https://upload.wikimedia.org/wikipedia/commons/c/cc/Guangzhou_Metro_icon.svg',
     order: 1000,
   },
   enterpriseSearch: {
@@ -36,14 +36,14 @@ export const DEFAULT_APP_CATEGORIES: Record<string, AppCategory> = Object.freeze
       defaultMessage: 'Enterprise Search',
     }),
     order: 2000,
-    euiIconType: 'logoEnterpriseSearch',
+    euiIconType: 'https://upload.wikimedia.org/wikipedia/commons/c/cc/Guangzhou_Metro_icon.svg',
   },
   observability: {
     id: 'observability',
     label: i18n.translate('core.ui.observabilityNavList.label', {
       defaultMessage: 'Observability',
     }),
-    euiIconType: 'logoObservability',
+    euiIconType: 'https://upload.wikimedia.org/wikipedia/commons/c/cc/Guangzhou_Metro_icon.svg',
     order: 3000,
   },
   security: {
@@ -52,7 +52,7 @@ export const DEFAULT_APP_CATEGORIES: Record<string, AppCategory> = Object.freeze
       defaultMessage: 'Security',
     }),
     order: 4000,
-    euiIconType: 'logoSecurity',
+    euiIconType: 'https://upload.wikimedia.org/wikipedia/commons/c/cc/Guangzhou_Metro_icon.svg',
   },
   management: {
     id: 'management',
